@@ -2,7 +2,7 @@ const express = require("express")
 const server = express()
 const port = 3000
 
-let userController = require("./Controller/userController")
+let userController = require("../Controller/userController")
 
 server.get("/", userController)
 
