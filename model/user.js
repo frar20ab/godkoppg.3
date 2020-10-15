@@ -50,3 +50,4 @@ class image extends user {
 }
 
 module.exports = User;
+
