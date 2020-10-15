@@ -15,9 +15,11 @@ class paymentUser extends user{
 }
 
 class creditCard extends paymentUser {
-    constructor(user, cardnumber, cvc) {
+    constructor(user,cardName, cardnumber, cardDate, cvc) {
         super(user.firstname, user.age)
+        this.cardName =cardName
         this.cardnumber = cardnumber
+        this.cardDate = cardDate
         this.cvc = cvc
     }
 }
@@ -31,16 +33,18 @@ class freeUser extends user {
 } 
 
 class interest extends user {
-    constructor(user, interest){
+    constructor(user, basketball, running, cooking){
         super(user.firstname, user.age)
-        this.interest = interest
+        this.basketball = basketball
+        this.running = running
+        this.cooking = cooking
     }
 }
 
 class match extends user {
-    constructor(user, matchId) {
-        super(user.firstname, user.age)
-        this.match = matchId
+    constructor(female, male) {
+        this.female = female
+        this.male = male
     }
 }
 
