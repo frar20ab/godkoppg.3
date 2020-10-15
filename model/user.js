@@ -49,3 +49,4 @@ class image extends user {
     constructor()
 }
 
+module.exports = User;

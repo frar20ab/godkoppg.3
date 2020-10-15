@@ -1,6 +1,5 @@
-var express = require('express')
-const cors = require('cors')
-  var app = express(),
-  port = process.env.PORT || 3000;
-  var i = 0
-  
+const express = require("express")
+const server = express()
+const port = 3000
+
+let 
