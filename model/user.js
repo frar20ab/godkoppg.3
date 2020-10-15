@@ -9,14 +9,16 @@ class user {
 }
 
 class paymentUser extends user{
-    constructor(user){
-        super(user.firstname, user.age)
+    constructor(user, credidCardInfo){
+        super(user)
+        this.credidCardInfo = credidCardInfo 
     }
 }
 
 class creditCard extends paymentUser {
-    constructor(user,cardName, cardnumber, cardDate, cvc) {
-        super(user.firstname, user.age)
+    constructor(paymentUser, cardName, cardnumber, cardDate, cvc) {
+        super(paymentUser)
+        this.paymentUser = paymentUser
         this.cardName =cardName
         this.cardnumber = cardnumber
         this.cardDate = cardDate
@@ -27,7 +29,7 @@ class creditCard extends paymentUser {
 
 class freeUser extends user {
     constructor(user, trialperiod){
-        super(user.firstname, user.age)
+        super(user)
         this.trialperiod = trialperiod
     }
 } 
@@ -49,9 +51,27 @@ class match extends user {
 }
 
 
-//class image extends user {
-//     constructor()
-// }
+class image {
+    constructor(imgaeType, imageSize, imagePath){
+        this.imgaeType = imgaeType
+        this.imageSize = imageSize
+        this.imagePath = imagePath
+    }
+
+}
+
+var imageX = //find billede og set path ind
+var imageY = //find billede og set path ind
+
+
+var userY = new user ("Sandra", "Nielsen", 19, "sn@gmail.com", "12345678",)
+
+
+var userX = new user ("Peter", "jacobsen", 22, "pj@gmail.com", "12345678")
+
+
+
+
 
 module.exports = user;
 
