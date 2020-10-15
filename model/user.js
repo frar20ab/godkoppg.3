@@ -45,9 +45,9 @@ class match extends user {
 }
 
 
-class image extends user {
-    constructor()
-}
+//class image extends user {
+//     constructor()
+// }
 
 module.exports = User;
 
