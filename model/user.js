@@ -49,5 +49,5 @@ class match extends user {
 //     constructor()
 // }
 
-module.exports = User;
+module.exports = user;
 
